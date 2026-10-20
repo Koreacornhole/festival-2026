@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 전국 콘홀 대회 안내</title>
+<meta name="description" content="2026년 11월 28일(토) 한밭대학교 실내체육관에서 열리는 2026 전국 콘홀 대회 안내">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0e2340;
+  --navy-2:#16315a;
+  --ink:#1b2430;
+  --muted:#5b6673;
+  --line:#d5dbe3;
+  --paper:#f4f6f9;
+  --white:#ffffff;
+  --gold:#b08d3c;
+  --gold-soft:#e9dcb8;
+  --red:#b82a36;
+  --blue:#1f5fbf;
+  --yellow:#e5a800;
+  --green:#2a8a52;
+  --sans:"Pretendard","Noto Sans KR","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+  --serif:var(--sans);
+}
+*{box-sizing:border-box;margin:0;padding:0;border-radius:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+/* 상단 내비 */
+.nav{position:sticky;top:0;z-index:10;background:var(--navy);border-bottom:1px solid rgba(255,255,255,.12)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:52px;gap:16px}
+.nav b{color:#fff;font-weight:700;letter-spacing:.04em;font-size:14px;white-space:nowrap}
+.nav ul{display:flex;gap:22px;list-style:none;overflow-x:auto}
+.nav a{color:#c5d0e0;text-decoration:none;font-size:13.5px;white-space:nowrap}
+.nav a:hover{color:#fff}
+
+/* 히어로 */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero{background:linear-gradient(135deg,#1d4278 0%,#12294a 48%,#0a1a33 100%)}
+.hero::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--gold)}
+.hero .wrap{position:relative;z-index:1;padding-top:84px;padding-bottom:76px}
+.hero .org{font-size:13.5px;letter-spacing:.18em;color:var(--gold-soft);margin-bottom:22px}
+.hero h1{font-family:var(--sans);font-weight:800;font-size:clamp(38px,7vw,68px);line-height:1.15;letter-spacing:-.03em}
+.hero h1 span{display:block;font-size:.4em;font-weight:600;letter-spacing:.3em;color:var(--gold-soft);margin-bottom:14px}
+.hero .rule{width:72px;height:3px;background:var(--gold);margin:30px 0}
+.hero .slogan{font-family:var(--serif);font-size:clamp(17px,2.4vw,22px);color:#dfe6f1}
+.meta{display:grid;grid-template-columns:1.55fr 1fr .95fr 1.3fr;margin-top:48px;border-top:1px solid rgba(255,255,255,.22)}
+.meta div{padding:20px 22px 0 0}
+.meta div+div{padding-left:22px;border-left:1px solid rgba(255,255,255,.22)}
+.meta small{display:block;font-size:12px;letter-spacing:.16em;color:var(--gold-soft);margin-bottom:4px}
+.meta strong{font-size:clamp(16px,2.2vw,20px);font-weight:700;line-height:1.45;display:block}
+
+.meta .big{white-space:nowrap;font-size:clamp(26px,4vw,42px);font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.meta .big em{font-style:normal;color:var(--gold-soft);font-size:.62em;font-weight:700;margin-left:2px}
+.meta .time{display:block;margin-top:6px;font-size:clamp(17px,2.2vw,22px);font-weight:700;color:var(--gold-soft)}
+
+.meta .sub-fee{white-space:nowrap;display:block;margin-top:6px;font-size:clamp(15px,1.8vw,18px);font-weight:700;color:var(--gold-soft)}
+
+/* 섹션 */
+section{padding:72px 0 8px}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:28px;padding-bottom:14px;border-bottom:2px solid var(--navy)}
+.sec-head .no{font-family:var(--serif);font-weight:800;font-size:15px;color:var(--gold);letter-spacing:.12em}
+.sec-head h2{letter-spacing:-.02em;font-size:clamp(24px,3.4vw,32px);color:var(--navy);font-weight:800;line-height:1.3}
+.lead{font-size:17px;color:var(--ink);margin-bottom:26px;max-width:780px}
+
+/* 강조 */
+.em{font-weight:700;color:var(--navy);background:linear-gradient(transparent 62%,rgba(176,141,60,.32) 62%)}
+.hot{font-weight:700;color:var(--red)}
+.list b,td b{font-weight:700;color:var(--navy)}
+
+/* 표 */
+table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);font-size:15.5px}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:var(--navy);color:#fff;font-weight:700;letter-spacing:.04em;font-size:14.5px;border-bottom:0}
+tbody th{background:#eef1f6;color:var(--navy);font-weight:700;width:150px;white-space:nowrap}
+td.c,th.c{text-align:center}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.tbl-note{margin-top:12px;font-size:13.5px;color:var(--muted)}
+
+/* 4팀 */
+.teams{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);background:var(--white)}
+.team{padding:0 0 22px;text-align:center;border-right:1px solid var(--line)}
+.team:last-child{border-right:0}
+.team i{display:block;height:10px}
+.team h3{font-family:var(--serif);font-weight:800;font-size:26px;letter-spacing:.06em;margin-top:22px}
+.team p{font-size:14px;color:var(--muted);margin-top:2px}
+.team.red i{background:var(--red)}    .team.red h3{color:var(--red)}
+.team.blue i{background:var(--blue)}  .team.blue h3{color:var(--blue)}
+.team.yellow i{background:var(--yellow)} .team.yellow h3{color:#a87c00}
+.team.green i{background:var(--green)} .team.green h3{color:var(--green)}
+
+.points{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:28px}
+.points h4,.sub{font-size:15px;font-weight:700;color:var(--navy);letter-spacing:.04em;margin-bottom:10px;padding-left:12px;border-left:4px solid var(--gold)}
+
+.list{list-style:none;margin-top:26px;background:var(--white);border:1px solid var(--line);border-left:4px solid var(--navy)}
+.list li{padding:14px 20px;border-bottom:1px solid var(--line);position:relative;padding-left:40px}
+.list li:last-child{border-bottom:0}
+.list li::before{content:"";position:absolute;left:20px;top:25px;width:7px;height:7px;background:var(--gold)}
+
+/* 상금 */
+.prize-total{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:0;background:var(--navy);color:#fff;padding:20px 24px;flex-wrap:wrap}
+.prize-total span{font-size:14px;letter-spacing:.14em;color:var(--gold-soft)}
+.prize-total strong{font-family:var(--serif);font-size:28px;font-weight:800}
+.won{font-weight:800;color:var(--red)}
+
+.prize-team{margin-top:20px;padding:18px 22px;background:var(--white);border:1px solid var(--line);border-left:4px solid var(--red);font-size:clamp(19px,2.6vw,24px);font-weight:800;color:var(--navy);letter-spacing:-.01em}
+
+/* 접수 */
+.apply{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:stretch}
+.cta{background:var(--navy);color:#fff;padding:34px 30px;display:flex;flex-direction:column;justify-content:space-between;gap:22px}
+.cta small{font-size:12.5px;letter-spacing:.18em;color:var(--gold-soft)}
+.cta .deadline{font-family:var(--serif);font-weight:800;font-size:clamp(26px,3.6vw,34px);line-height:1.35;margin-top:6px}
+.cta .fee{border-top:1px solid rgba(255,255,255,.25);padding-top:18px;font-size:15px;color:#dfe6f1}
+.cta .fee b{display:block;font-family:var(--serif);font-size:28px;color:#fff}
+.btn{display:inline-block;background:var(--gold);color:#111;text-decoration:none;font-weight:700;padding:14px 24px;letter-spacing:.04em;text-align:center}
+.btn:hover{background:#c29f4d}
+.meta .age,.cta .age,.age{display:inline;font-size:12px;font-weight:400;letter-spacing:0;margin:0;color:inherit;opacity:.75}
+.pending{color:var(--red);font-weight:700}
+
+/* 푸터 */
+footer{margin-top:80px;background:var(--navy);color:#c5d0e0;padding:40px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer strong{color:#fff;font-family:var(--serif);font-size:17px;display:block;margin-bottom:4px}
+
+@media (max-width:780px){
+  .wrap{padding:0 18px}
+  .nav ul{gap:16px}
+  .hero .wrap{padding-top:56px;padding-bottom:52px}
+  .hero h1 span{letter-spacing:.1em;font-size:.34em}
+  .hero .org{letter-spacing:.08em}
+  .meta{grid-template-columns:1fr}
+  .meta div,.meta div+div{padding:14px 0;border-left:0;border-bottom:1px solid rgba(255,255,255,.18)}
+  .teams{grid-template-columns:repeat(2,1fr)}
+  .team:nth-child(2){border-right:0}
+  .team:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .points,.apply{grid-template-columns:1fr}
+  section{padding-top:52px}
+  th,td{padding:11px 12px;font-size:14.5px}
+  tbody th{width:96px;white-space:normal}
+  .scroll{overflow-x:auto}
+}
+@media print{
+  .nav{display:none}
+  body{background:#fff}
+  section{padding-top:28px;break-inside:avoid}
+  .hero,.cta,.prize-total,thead th{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <b>2026 전국 콘홀 대회</b>
+    <ul>
+      <li><a href="#overview">개요</a></li>
+      <li><a href="#teams">축제팀</a></li>
+      <li><a href="#events">종목</a></li>
+      <li><a href="#prize">상금</a></li>
+      <li><a href="#apply">접수</a></li>
+      <li><a href="#schedule">일정</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="org">한국콘홀협회</p>
+    <h1><span>2026 NATIONAL CORNHOLE FESTIVAL</span>2026 전국 콘홀 대회</h1>
+    <div class="rule"></div>
+    <p class="slogan">경기도 즐기고, 팀 경기도 함께하는 전국 콘홀 대회</p>
+    <div class="meta">
+      <div class="m-date"><small>일시</small><strong class="big">2026. 11. 28 <em>(토)</em></strong><span class="time">12:30 – 17:30</span></div>
+      <div><small>장소</small><strong>대전 한밭대학교<br>실내체육관</strong></div>
+      <div><small>접수 마감</small><strong>2026. 11. 15 (일)</strong></div>
+      <div><small>참가비</small><strong>1인 20,000원</strong><span class="sub-fee">청소년 10,000원 <small class="age">(만 19세 미만)</small></span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="overview">
+  <div class="sec-head"><span class="no">01</span><h2>대회 개요</h2></div>
+  <table>
+    <tbody>
+      <tr><th>행사명</th><td>2026 전국 콘홀 대회</td></tr>
+      <tr><th>일시</th><td><span class="em">2026년 11월 28일(토) 12:30 – 17:30</span> <span style="color:var(--muted)">(11:50부터 개인 연습 및 참가 확인)</span></td></tr>
+      <tr><th>장소</th><td><span class="em">대전 한밭대학교 실내체육관</span></td></tr>
+      <tr><th>참가 대상</th><td>전국 콘홀 플레이어 누구나 (남녀 모두 참가 가능)</td></tr>
+      <tr><th>주최 · 주관</th><td>한국콘홀협회</td></tr>
+      <tr><th>참가비</th><td><span class="hot">1인 20,000원</span> &nbsp;<span class="hot">(청소년 10,000원)</span> <small class="age" style="color:var(--muted)">청소년: 만 19세 미만</small> &nbsp;<span style="color:var(--muted)">참가 종목 수와 관계없이 동일</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="teams">
+  <div class="sec-head"><span class="no">02</span><h2>4개 축제팀</h2></div>
+  <p class="lead">정식 리그 경기와 팀 대항 이벤트를 함께 운영합니다. 참가자 전원은 네 개의 축제팀 중 한 팀에 소속되어, 경기가 끝난 뒤에도 팀 경기에 참여합니다.</p>
+
+  <div class="teams">
+    <div class="team red"><i></i><h3>RED</h3><p>빨강팀</p></div>
+    <div class="team blue"><i></i><h3>BLUE</h3><p>파랑팀</p></div>
+    <div class="team yellow"><i></i><h3>YELLOW</h3><p>노랑팀</p></div>
+    <div class="team green"><i></i><h3>GREEN</h3><p>초록팀</p></div>
+  </div>
+
+  <ul class="list">
+    <li>팀은 신청자가 고르는 것이 아니라, <span class="hot">협회가 실력이 고르게 섞이도록 균형 있게 편성</span>합니다. 배정 결과와 팀 색상은 대회 전에 안내합니다.</li>
+    <li>당일에는 팀 색상 테두리가 있는 이름 라벨로 팀을 구분합니다.</li>
+    <li>각 종목 경기의 성적이 소속 팀의 점수가 되며, 일찍 탈락하더라도 팀 이벤트전과 응원으로 계속 참여합니다.</li>
+    <li>팀 최종 점수가 가장 높은 팀이 <span class="hot">종합 우승팀</span>이 되며, 팀 전체가 함께 받는 단체 상품을 수여합니다.</li>
+    <li>행사 중간에 행운권 추첨(10회 내외)을 진행하고, 팀 누적 점수를 수시로 공개합니다.</li>
+  </ul>
+
+</section>
+
+<section id="events">
+  <div class="sec-head"><span class="no">03</span><h2>경기 종목</h2></div>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>종목</th><th>대상 및 설명</th></tr></thead>
+    <tbody>
+      <tr><th>남성 1부 리그</th><td>남성 선수가 본인이 선택해 신청하는 리그. 우승 상금 규모가 가장 큼 <span style="color:var(--muted)">(등급 구분 없이 자유 신청)</span></td></tr>
+      <tr><th>남성 2부 리그</th><td>남성 선수가 본인이 선택해 신청하는 리그 <span style="color:var(--muted)">(등급 구분 없이 자유 신청)</span></td></tr>
+      <tr><th>통합 3부 리그</th><td><b>첫 출전자, 청소년, 여성 선수</b>가 신청할 수 있는 리그</td></tr>
+      <tr><th>여성 리그</th><td>여성 선수만 참가</td></tr>
+      <tr><th>더블전</th><td>남남 · 남녀 · 여여 조합 모두 가능. 참가자끼리 팀을 구성해 신청</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <ul class="list">
+        <li><b>이번 대회는 기록 데이터가 충분하지 않아 남성 선수를 1부·2부로 미리 나누지 않습니다.</b> 참가자가 <span class="hot">남성 1부·2부, 통합 3부 중 원하는 리그를 직접 선택</span>해 신청합니다.</li>
+    <li><b>남성 1부·2부 리그</b>는 남성 선수라면 신청 자격 제한 없이 원하는 곳에 신청할 수 있습니다. 리그별 상금 규모가 다르므로 본인의 실력과 경험을 고려해 판단해 주세요.</li>
+    <li><b>통합 3부 리그</b>는 <b>첫 출전자, 청소년, 여성 선수</b>가 신청할 수 있습니다. 처음 출전하는 선수는 통합 3부 리그에 출전합니다.</li>
+    <li><b>여성 선수는 통합 3부 리그와 여성 리그에만</b> 출전할 수 있으며, 둘 중 하나를 선택합니다. <span class="hot">중복 신청은 불가</span>합니다.</li>
+    <li>개인전에 참여한 선수는 더블전 1팀까지 출전할 수 있습니다. <b>※ 더블전만 출전하는 것도 가능합니다.</b></li>
+    <li>랭킹 포인트는 출전한 종목별로 따로 쌓입니다. (예: 통합 3부 리그와 더블전에 모두 출전하면, 두 종목의 포인트가 각각 인정됩니다.)</li>
+    <li>종목은 참가자가 직접 선택해 신청하며, 통합 3부 리그 참가 자격이 맞지 않는 경우 등 운영본부가 확인 후 조정할 수 있습니다.</li>
+    <li><span class="hot">이번 대회 결과를 바탕으로 남성 선수의 1부·2부 리그 등급을 구분</span>하며, 이후 대회부터 이 등급을 적용합니다.</li>
+  </ul>
+</section>
+
+<section id="prize">
+  <div class="sec-head"><span class="no">04</span><h2>상금 및 시상</h2></div>
+  <div class="prize-total"><span>공식 상금 총액</span><strong>300만 원</strong></div>
+  <table>
+    <thead><tr><th>종목</th><th class="c">우승</th><th class="c">준우승</th></tr></thead>
+    <tbody>
+      <tr><th>남성 1부 리그</th><td class="c"><span class="won">상금 100만 원</span> + 트로피</td><td class="c"><span class="won">상금 30만 원</span> + 트로피</td></tr>
+      <tr><th>남성 2부 리그</th><td class="c"><span class="won">상금 30만 원</span> + 트로피</td><td class="c"><span class="won">상금 10만 원</span> + 트로피</td></tr>
+      <tr><th>통합 3부 리그</th><td class="c"><span class="won">상금 20만 원</span> + 트로피</td><td class="c"><span class="won">상금 10만 원</span> + 트로피</td></tr>
+      <tr><th>여성 리그</th><td class="c"><span class="won">상금 30만 원</span> + 트로피</td><td class="c"><span class="won">상금 10만 원</span> + 트로피</td></tr>
+      <tr><th>더블전</th><td class="c"><span class="won">상금 40만 원</span> + 트로피</td><td class="c"><span class="won">상금 20만 원</span> + 트로피</td></tr>
+    </tbody>
+  </table>
+  <p class="prize-team">축제팀 종합 우승팀에는 단체 상품을 수여합니다.</p>
+  <p class="tbl-note">3·4위 시상 여부는 참가 규모에 따라 정해 공지합니다.</p>
+</section>
+
+<section id="apply">
+  <div class="sec-head"><span class="no">05</span><h2>접수 안내</h2></div>
+  <div class="apply">
+    <div class="cta">
+      <div>
+        <small>접수 마감</small>
+        <div class="deadline">2026년 11월 15일(일)까지</div>
+      </div>
+      <div class="fee"><b>1인 20,000원</b>청소년 10,000원 <small class="age">(만 19세 미만)</small><br>참가 종목 수와 관계없이 동일</div>
+      <a class="btn" href="https://cornhole.kr/competition/apply" target="_blank" rel="noopener">홈페이지 cornhole.kr 에서 신청</a>
+    </div>
+    <table>
+      <tbody>
+        <tr><th>접수 방법</th><td>홈페이지 <a class="hot" href="https://cornhole.kr/competition/apply" target="_blank" rel="noopener">cornhole.kr</a> 에서 신청</td></tr>
+        <tr><th>입금 계좌</th><td><span class="em">농협 351-1413-4643-33</span> <span style="color:var(--muted)">(예금주 한국콘홀협회)</span></td></tr>
+        <tr><th>신청 항목</th><td>개인전 종목 선택 (남성 1부 리그 · 남성 2부 리그 · 통합 3부 리그 · 여성 리그), 더블전 참가 여부 선택</td></tr>
+        <tr><th>접수 후</th><td><b>11월 16일</b> 접수 내용 취합 및 대진 편성 후, 팀 배정 결과와 세부 대회요강을 홈페이지에 게재합니다.</td></tr>
+        <tr><th>문의</th><td><span class="em">1833-8979</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="sec-head"><span class="no">06</span><h2>당일 일정 (안)</h2></div>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>시간</th><th>내용</th><th>주요 사항</th></tr></thead>
+    <tbody>
+      <tr><td class="num">11:50 – 12:20</td><td>참가 확인 · 연습</td><td>참가자 확인, 주머니 점검, 자유 연습 30분</td></tr>
+      <tr><td class="num">12:20 – 12:30</td><td>입장 · 팀별 착석</td><td>팀 색상 확인, 코트·대기구역 안내</td></tr>
+      <tr><td class="num">12:30 – 12:45</td><td>개회 및 안내</td><td>개회, 대회 취지 및 시상 안내</td></tr>
+      <tr><td class="num">12:45 – 13:00</td><td>팀 소개 · 대진 안내</td><td>빨강·파랑·노랑·초록 팀 소개, 대진·코트 확인</td></tr>
+      <tr><td class="num">13:00 – 14:50</td><td><b>종목별 예선</b></td><td>남성 1부 → 남성 2부 → 통합 3부 리그 순, 여성 리그·더블전 병행 / 행운권 추첨</td></tr>
+      <tr><td class="num">14:50 – 15:15</td><td><b>팀 이벤트전</b></td><td>팀 대표 경기, 팀 점수 중간 공개 / 행운권 추첨</td></tr>
+      <tr><td class="num">15:15 – 16:50</td><td><b>4강 및 결승</b></td><td>종목별 4강·결승(개인 결승은 마지막), 이벤트전 마무리 / 행운권 추첨</td></tr>
+      <tr><td class="num">16:50 – 17:05</td><td>최종 집계 · 행운권</td><td>결과 확인, 팀 총점 집계, 행운권 추첨</td></tr>
+      <tr><td class="num">17:05 – 17:30</td><td><b>시상 및 폐회</b></td><td>종목별 시상, 축제팀 우승 시상, 단체사진 및 폐회</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="tbl-note">참가자 수와 코트 수에 따라 시간이 조정될 수 있으며, 17:30 종료를 목표로 운영합니다.</p>
+
+  <h3 class="sub" style="margin-top:36px">경기 방식 개요</h3>
+  <ul class="list" style="margin-top:0">
+    <li>예선은 <b>경기당 최대 10라운드</b>로 진행하며, 4강부터 결승까지는 <b>먼저 21점을 얻는 선수가 승리하는 21점 경기</b>로 진행합니다.</li>
+    <li>본인 주머니 또는 현장에 준비된 대회용 주머니를 사용할 수 있으며, 개인 주머니는 <span class="hot">KCL 인정 주머니만</span> 사용 가능합니다.</li>
+    <li>모든 선수는 경기 시작 전 코트에 대기해야 하며, 호출 후 정해진 시간 내에 출전하지 않을 경우 대회 규정에 따라 처리됩니다.</li>
+    <li>세부 경기 규칙, 득점·파울·동점 처리, 주머니 규정 등 자세한 진행 규정은 접수 후 홈페이지에 게재되는 <span class="em">「대회요강」</span>에 안내합니다.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong>2026 전국 콘홀 대회</strong>한국콘홀협회</div>
+    <div>문의 1833-8979<br>cornhole.kr</div>
+  </div>
+</footer>
+
+</body>
+</html>
